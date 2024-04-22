@@ -24,16 +24,22 @@ public class TodoResource {
 		Todo obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
-	
+
 	@GetMapping(value = "/open")
 	public ResponseEntity<List<Todo>> listOpen() {
 		List<Todo> list = service.findAllOpen();
 		return ResponseEntity.ok().body(list);
 	}
-	
+
 	@GetMapping(value = "/close")
 	public ResponseEntity<List<Todo>> listClose() {
 		List<Todo> list = service.findAllClose();
+		return ResponseEntity.ok().body(list);
+	}
+
+	@GetMapping
+	public ResponseEntity<List<Todo>> listAll() {
+		List<Todo> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 
