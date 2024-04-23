@@ -14,13 +14,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FinalizadosComponent } from './components/finalizados/finalizados.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ReadAllComponent
+    ReadAllComponent,
+    FinalizadosComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HttpClientModule,
     MatBadgeModule,
     MatSnackBarModule,
+    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
