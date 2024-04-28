@@ -23,6 +23,7 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from "@angular/material/core";
 import { MatSelectModule } from "@angular/material/select";
 import { MatRadioModule } from "@angular/material/radio";
+import { UpdateComponent } from './components/update/update.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatRadioModule } from "@angular/material/radio";
     ReadAllComponent,
     FinalizadosComponent,
     CreateComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
